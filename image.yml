@@ -10,6 +10,9 @@ upstream:
   version:
     type: github_release
     repo: zen-browser/desktop
+    require_assets:
+      - asset: '^zen\.linux\-x86_64\.tar\.xz$'
+      - asset: '^zen\.linux\-aarch64\.tar\.xz$'
   notes:
     type: github_release
     repo: zen-browser/desktop
